@@ -1,0 +1,2 @@
+import{r,h as s}from"./p-fd25d70c.js";const o=":host{display:inline-block;cursor:pointer}";const t=o;const c=class{constructor(s){r(this,s);this.isOpen=false}render(){return s("slot",{key:"fa5c96b865666a44aab707b25102c1aefbd78969"})}};c.style=t;export{c as ifx_dropdown_trigger};
+//# sourceMappingURL=p-154e8f11.entry.js.map

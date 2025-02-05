@@ -1,0 +1,120 @@
+:host {
+  display: inline-flex;
+  vertical-align: top;
+}
+
+.checkbox__container {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  font-family: var(--ifx-font-family);
+}
+.checkbox__container .checkbox__wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #575352;
+  border-radius: 1px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.checkbox__container .checkbox__wrapper.checkbox-m {
+  height: 24px;
+  width: 24px;
+}
+.checkbox__container .checkbox__wrapper.error {
+  border-color: #CD002F;
+}
+.checkbox__container .checkbox__wrapper:focus-visible {
+  border: 1px solid #575352;
+  outline: 2px solid #0A8276;
+  outline-offset: 2px;
+}
+.checkbox__container .checkbox__wrapper:hover {
+  background-color: #EEEDED;
+  border: 1px solid #575352;
+  border-radius: 1px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.checkbox__container .checkbox__wrapper.disabled {
+  background-color: #BFBBBB;
+  border-color: #BFBBBB;
+  border-radius: 1px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.checkbox__container .checkbox__wrapper.checked {
+  background-color: #0A8276;
+  border-radius: 1px;
+  border-color: transparent;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: #FFFFFF;
+}
+.checkbox__container .checkbox__wrapper.checked.error {
+  background-color: #CD002F;
+}
+.checkbox__container .checkbox__wrapper.checked:focus-visible {
+  border: 1px solid transparent;
+  outline: 2px solid #0A8276;
+  outline-offset: 2px;
+}
+.checkbox__container .checkbox__wrapper.checked:hover {
+  background-color: #08665C;
+  border-radius: 1px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.checkbox__container .checkbox__wrapper.checked.disabled {
+  background: #BFBBBB;
+  border-radius: 1px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.checkbox__container .checkbox__wrapper.indeterminate:before {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: #08665C;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.checkbox__container .label {
+  height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #1D1D1D;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.checkbox__container .label.label-m {
+  height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.checkbox__container .label.disabled {
+  color: #BFBBBB;
+}
+.checkbox__container .checkbox__wrapper:hover, .checkbox__container .label:hover {
+  cursor: pointer;
+}

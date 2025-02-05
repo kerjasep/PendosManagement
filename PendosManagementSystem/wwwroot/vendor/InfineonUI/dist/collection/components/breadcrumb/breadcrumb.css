@@ -1,0 +1,19 @@
+:root {
+  --ifx-font-family: "Source Sans 3";
+  font-family: var(--ifx-font-family, sans-serif);
+}
+
+:host {
+  display: flex;
+}
+
+.breadcrumb {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--ifx-font-family);
+  font-size: 0.875rem;
+  align-items: flex-start;
+}

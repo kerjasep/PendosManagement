@@ -1,0 +1,9 @@
+:host {
+  display: inline-flex;
+}
+
+.list-group-container {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+}

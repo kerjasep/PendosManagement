@@ -1,0 +1,1 @@
+{"version":3,"file":"colorNames.js","sourceRoot":"","sources":["../../src/global/colorNames.ts"],"names":[],"mappings":"","sourcesContent":["export type mainColors = 'primary' | 'secondary' | 'success' | 'warning' | 'danger';"]}

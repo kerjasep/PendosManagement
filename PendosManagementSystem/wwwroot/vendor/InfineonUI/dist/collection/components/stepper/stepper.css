@@ -1,0 +1,46 @@
+:root {
+  --ifx-font-family: "Source Sans 3";
+  font-family: var(--ifx-font-family, sans-serif);
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+}
+.stepper.compact {
+  justify-content: space-between;
+  align-items: center;
+}
+.stepper.compact.compact-right {
+  flex-direction: row-reverse;
+  text-align: left;
+}
+.stepper.compact .stepper-wrapper {
+  flex-direction: column;
+}
+
+.stepper-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.stepper-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600 0.875rem/1.25rem "Source Sans 3";
+  min-width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+  background: conic-gradient(#0A8276 var(--pb, 0%), #8D8786 0);
+}
+.stepper-progress .progress-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  background: white;
+}

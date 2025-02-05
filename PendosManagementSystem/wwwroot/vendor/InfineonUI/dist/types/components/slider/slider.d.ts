@@ -1,0 +1,38 @@
+import { EventEmitter } from '../../stencil-public-runtime';
+export declare class IfxSlider {
+    min: number;
+    max: number;
+    step: number;
+    value: number;
+    minValueHandle: number;
+    maxValueHandle: number;
+    disabled: boolean;
+    showPercentage: boolean;
+    leftIcon: string;
+    rightIcon: string;
+    leftText: string;
+    rightText: string;
+    type: 'single' | 'double';
+    internalValue: number;
+    percentage: number;
+    internalMinValue: number;
+    internalMaxValue: number;
+    ifxChange: EventEmitter;
+    el: any;
+    private inputRef;
+    private minInputRef;
+    private maxInputRef;
+    valueChanged(newValue: number): void;
+    minValueChanged(newValue: number): void;
+    maxValueChanged(newValue: number): void;
+    getRangeSliderWrapper(): any;
+    handleInputChangeOfRangeSlider(event: Event): void;
+    handleOnMouseLeaveOfRangeSlider(event: Event): void;
+    calculatePercentageValue(): void;
+    handleInputChange(event: Event): void;
+    private roundToValidStep;
+    updateValuePercent(): void;
+    componentWillLoad(): void;
+    componentDidLoad(): void;
+    render(): any;
+}
