@@ -1,2 +1,0 @@
-import{r as t,h as s,g as e}from"./p-fd25d70c.js";const r=":host{display:block}";const f=r;const i=class{constructor(s){t(this,s);this.header=undefined;this.disabled=undefined;this.icon="";this.iconPosition="left"}render(){return s("slot",{key:"5f2bfa7a1987f4a36f50fc2380b2426a0360c905"})}get el(){return e(this)}};i.style=f;export{i as ifx_tab};
-//# sourceMappingURL=p-a862bec0.entry.js.map
